@@ -1,0 +1,36 @@
+# /etc/prometheus/prometheus.yml on the Monitoring server
+# Replace the <...> values with PRIVATE IPs (they don't change when you stop/start EC2).
+# YAML rule: use spaces, never tabs. Check with:  promtool check config /etc/prometheus/prometheus.yml
+
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  # Prometheus monitoring itself
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["localhost:9090"]
+
+  # Monitoring server's own CPU / memory / disk
+  - job_name: "monitoring_server"
+    static_configs:
+      - targets: ["localhost:9100"]
+
+  # Jenkins server's CPU / memory / disk (node_exporter)
+  - job_name: "netflix_server_metrics"
+    static_configs:
+      - targets: ["<jenkins-private-ip>:9100"]
+
+  # Jenkins application metrics (Prometheus metrics plugin)
+  - job_name: "jenkins"
+    metrics_path: "/prometheus"
+    static_configs:
+      - targets: ["<jenkins-private-ip>:8080"]
+
+  # EKS worker nodes (node_exporter installed with Helm).
+  # Get IPs with: kubectl get nodes -o wide   (INTERNAL-IP column)
+  # EKS Auto Mode can replace nodes, so re-check these IPs if a target goes DOWN.
+  - job_name: "eks_nodes"
+    static_configs:
+      - targets: ["<node1-ip>:9100", "<node2-ip>:9100", "<node3-ip>:9100"]

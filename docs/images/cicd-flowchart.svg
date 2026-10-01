@@ -1,0 +1,266 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1110" viewBox="0 0 1600 1110" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<defs>
+<marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="context-stroke"/></marker>
+<marker id="ahb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d4ed8"/></marker>
+<marker id="ahn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0b2545"/></marker>
+<marker id="aho" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e8590c"/></marker>
+<marker id="ahg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#15803d"/></marker>
+<marker id="ahp" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/></marker>
+<filter id="sh" x="-5%" y="-5%" width="110%" height="115%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0b2545" flood-opacity="0.12"/></filter>
+</defs>
+<rect x="0" y="0" width="1600" height="1110" rx="0" fill="#f4f7fb" stroke="none" stroke-width="1.5" />
+<rect x="0" y="0" width="1600" height="112" rx="0" fill="#0b2545" stroke="none" stroke-width="1.5" />
+<text x="36" y="72" font-size="46" fill="#e50914" font-weight="800" text-anchor="start" letter-spacing="1">NETFLIX</text>
+<line x1="270" y1="22" x2="270" y2="90" stroke="#3d5a80" stroke-width="2"/>
+<text x="296" y="58" font-size="34" fill="#ffffff" font-weight="700" text-anchor="start" >DevSecOps CI/CD Pipeline</text>
+<text x="296" y="90" font-size="17" fill="#9ec5fe" font-weight="600" text-anchor="start" >Jenkins · SonarQube · Trivy · Docker · ArgoCD · Amazon EKS · Prometheus · Grafana</text>
+<text x="1564" y="52" font-size="16" fill="#dbe7f5" font-weight="normal" text-anchor="end" >From a git commit to a scanned, monitored app</text>
+<text x="1564" y="78" font-size="16" fill="#dbe7f5" font-weight="normal" text-anchor="end" >running on Docker and Kubernetes (AWS)</text>
+<rect x="30" y="134" width="30" height="30" rx="6" fill="#0b2545" stroke="none" stroke-width="1.5" />
+<text x="45" y="155" font-size="17" fill="#fff" font-weight="800" text-anchor="middle" >1</text>
+<text x="72" y="155" font-size="20" fill="#0b2545" font-weight="700" text-anchor="start" >Architecture overview</text>
+<rect x="30" y="176" width="200" height="250" rx="12" fill="#fff" stroke="#24292f" stroke-width="1.5" filter="url(#sh)"/>
+<path d="M30,188 a12,12 0 0 1 12,-12 h176 a12,12 0 0 1 12,12 v32 h-200 z" fill="#24292f"/>
+<circle cx="52" cy="198" r="14" fill="#fff" stroke="#24292f" stroke-width="3"/>
+<text x="52" y="204" font-size="17" fill="#24292f" font-weight="800" text-anchor="middle" >1</text>
+<text x="74" y="204" font-size="16" fill="#fff" font-weight="700" text-anchor="start" >Source code</text>
+<circle cx="130.0" cy="268" r="34" fill="#24292f" opacity="0.12"/>
+<circle cx="130.0" cy="268" r="25" fill="#24292f"/>
+<text x="130.0" y="275" font-size="19" fill="#fff" font-weight="800" text-anchor="middle" >Gh</text>
+<text x="130.0" y="326" font-size="19" fill="#1f2a3d" font-weight="800" text-anchor="middle" >GitHub</text>
+<circle cx="50" cy="356" r="3" fill="#24292f"/>
+<text x="60" y="361" font-size="13" fill="#55627a" font-weight="normal" text-anchor="start" >Forked Netflix clone repo</text>
+<circle cx="50" cy="378" r="3" fill="#24292f"/>
+<text x="60" y="383" font-size="13" fill="#55627a" font-weight="normal" text-anchor="start" >App code + Kubernetes/</text>
+<circle cx="50" cy="400" r="3" fill="#24292f"/>
+<text x="60" y="405" font-size="13" fill="#55627a" font-weight="normal" text-anchor="start" >manifests live here</text>
+<line x1="233" y1="268" x2="251" y2="268" stroke="#0b2545" stroke-width="2.5" marker-end="url(#ahn)"/>
+<rect x="254" y="176" width="200" height="250" rx="12" fill="#fff" stroke="#d33833" stroke-width="1.5" filter="url(#sh)"/>
+<path d="M254,188 a12,12 0 0 1 12,-12 h176 a12,12 0 0 1 12,12 v32 h-200 z" fill="#d33833"/>
+<circle cx="276" cy="198" r="14" fill="#fff" stroke="#d33833" stroke-width="3"/>
+<text x="276" y="204" font-size="17" fill="#d33833" font-weight="800" text-anchor="middle" >2</text>
+<text x="298" y="204" font-size="16" fill="#fff" font-weight="700" text-anchor="start" >Build (CI)</text>
+<circle cx="354.0" cy="268" r="34" fill="#d33833" opacity="0.12"/>
+<circle cx="354.0" cy="268" r="25" fill="#d33833"/>
+<text x="354.0" y="275" font-size="19" fill="#fff" font-weight="800" text-anchor="middle" >J</text>
+<text x="354.0" y="326" font-size="19" fill="#1f2a3d" font-weight="800" text-anchor="middle" >Jenkins</text>
+<circle cx="274" cy="356" r="3" fill="#d33833"/>
+<text x="284" y="361" font-size="13" fill="#55627a" font-weight="normal" text-anchor="start" >Runs the Jenkinsfile</text>
+<circle cx="274" cy="378" r="3" fill="#d33833"/>
+<text x="284" y="383" font-size="13" fill="#55627a" font-weight="normal" text-anchor="start" >JDK 17 + Node 16 tools</text>
+<circle cx="274" cy="400" r="3" fill="#d33833"/>
+<text x="284" y="405" font-size="13" fill="#55627a" font-weight="normal" text-anchor="start" >Emails every result</text>
+<line x1="457" y1="268" x2="475" y2="268" stroke="#0b2545" stroke-width="2.5" marker-end="url(#ahn)"/>
+<rect x="478" y="176" width="200" height="250" rx="12" fill="#fff" stroke="#4e9bcd" stroke-width="1.5" filter="url(#sh)"/>
+<path d="M478,188 a12,12 0 0 1 12,-12 h176 a12,12 0 0 1 12,12 v32 h-200 z" fill="#4e9bcd"/>
+<circle cx="500" cy="198" r="14" fill="#fff" stroke="#4e9bcd" stroke-width="3"/>
+<text x="500" y="204" font-size="17" fill="#4e9bcd" font-weight="800" text-anchor="middle" >3</text>
+<text x="522" y="204" font-size="16" fill="#fff" font-weight="700" text-anchor="start" >Code quality</text>
+<circle cx="578.0" cy="268" r="34" fill="#4e9bcd" opacity="0.12"/>
+<circle cx="578.0" cy="268" r="25" fill="#4e9bcd"/>
+<text x="578.0" y="275" font-size="19" fill="#fff" font-weight="800" text-anchor="middle" >SQ</text>
+<text x="578.0" y="326" font-size="19" fill="#1f2a3d" font-weight="800" text-anchor="middle" >SonarQube</text>
+<circle cx="498" cy="356" r="3" fill="#4e9bcd"/>
+<text x="508" y="361" font-size="13" fill="#55627a" font-weight="normal" text-anchor="start" >Static analysis (SAST)</text>
+<circle cx="498" cy="378" r="3" fill="#4e9bcd"/>
+<text x="508" y="383" font-size="13" fill="#55627a" font-weight="normal" text-anchor="start" >Bugs, smells, hotspots</text>
+<circle cx="498" cy="400" r="3" fill="#4e9bcd"/>
+<text x="508" y="405" font-size="13" fill="#55627a" font-weight="normal" text-anchor="start" >Quality gate verdict</text>
+<line x1="681" y1="268" x2="699" y2="268" stroke="#0b2545" stroke-width="2.5" marker-end="url(#ahn)"/>
+<rect x="702" y="176" width="200" height="250" rx="12" fill="#fff" stroke="#1a9cb0" stroke-width="1.5" filter="url(#sh)"/>
+<path d="M702,188 a12,12 0 0 1 12,-12 h176 a12,12 0 0 1 12,12 v32 h-200 z" fill="#1a9cb0"/>
+<circle cx="724" cy="198" r="14" fill="#fff" stroke="#1a9cb0" stroke-width="3"/>
+<text x="724" y="204" font-size="17" fill="#1a9cb0" font-weight="800" text-anchor="middle" >4</text>
+<text x="746" y="204" font-size="16" fill="#fff" font-weight="700" text-anchor="start" >Security scans</text>
+<circle cx="802.0" cy="268" r="34" fill="#1a9cb0" opacity="0.12"/>
+<circle cx="802.0" cy="268" r="25" fill="#1a9cb0"/>
+<text x="802.0" y="275" font-size="19" fill="#fff" font-weight="800" text-anchor="middle" >Tv</text>
+<text x="802.0" y="326" font-size="19" fill="#1f2a3d" font-weight="800" text-anchor="middle" >Trivy</text>
+<circle cx="722" cy="356" r="3" fill="#1a9cb0"/>
+<text x="732" y="361" font-size="13" fill="#55627a" font-weight="normal" text-anchor="start" >Scans files + deps (FS)</text>
+<circle cx="722" cy="378" r="3" fill="#1a9cb0"/>
+<text x="732" y="383" font-size="13" fill="#55627a" font-weight="normal" text-anchor="start" >Scans the Docker image</text>
+<circle cx="722" cy="400" r="3" fill="#1a9cb0"/>
+<text x="732" y="405" font-size="13" fill="#55627a" font-weight="normal" text-anchor="start" >Reports sent by email</text>
+<line x1="905" y1="268" x2="923" y2="268" stroke="#0b2545" stroke-width="2.5" marker-end="url(#ahn)"/>
+<rect x="926" y="176" width="200" height="250" rx="12" fill="#fff" stroke="#2496ed" stroke-width="1.5" filter="url(#sh)"/>
+<path d="M926,188 a12,12 0 0 1 12,-12 h176 a12,12 0 0 1 12,12 v32 h-200 z" fill="#2496ed"/>
+<circle cx="948" cy="198" r="14" fill="#fff" stroke="#2496ed" stroke-width="3"/>
+<text x="948" y="204" font-size="17" fill="#2496ed" font-weight="800" text-anchor="middle" >5</text>
+<text x="970" y="204" font-size="16" fill="#fff" font-weight="700" text-anchor="start" >Registry</text>
+<circle cx="1026.0" cy="268" r="34" fill="#2496ed" opacity="0.12"/>
+<circle cx="1026.0" cy="268" r="25" fill="#2496ed"/>
+<text x="1026.0" y="275" font-size="19" fill="#fff" font-weight="800" text-anchor="middle" >Dk</text>
+<text x="1026.0" y="326" font-size="19" fill="#1f2a3d" font-weight="800" text-anchor="middle" >Docker Hub</text>
+<circle cx="946" cy="356" r="3" fill="#2496ed"/>
+<text x="956" y="361" font-size="13" fill="#55627a" font-weight="normal" text-anchor="start" >Stores the image</text>
+<circle cx="946" cy="378" r="3" fill="#2496ed"/>
+<text x="956" y="383" font-size="13" fill="#55627a" font-weight="normal" text-anchor="start" >Tags: latest + build no.</text>
+<circle cx="946" cy="400" r="3" fill="#2496ed"/>
+<text x="956" y="405" font-size="13" fill="#55627a" font-weight="normal" text-anchor="start" >Pulled by EKS nodes</text>
+<line x1="1129" y1="268" x2="1147" y2="268" stroke="#0b2545" stroke-width="2.5" marker-end="url(#ahn)"/>
+<rect x="1150" y="176" width="200" height="250" rx="12" fill="#fff" stroke="#ef7b4d" stroke-width="1.5" filter="url(#sh)"/>
+<path d="M1150,188 a12,12 0 0 1 12,-12 h176 a12,12 0 0 1 12,12 v32 h-200 z" fill="#ef7b4d"/>
+<circle cx="1172" cy="198" r="14" fill="#fff" stroke="#ef7b4d" stroke-width="3"/>
+<text x="1172" y="204" font-size="17" fill="#ef7b4d" font-weight="800" text-anchor="middle" >6</text>
+<text x="1194" y="204" font-size="16" fill="#fff" font-weight="700" text-anchor="start" >GitOps (CD)</text>
+<circle cx="1250.0" cy="268" r="34" fill="#ef7b4d" opacity="0.12"/>
+<circle cx="1250.0" cy="268" r="25" fill="#ef7b4d"/>
+<text x="1250.0" y="275" font-size="19" fill="#fff" font-weight="800" text-anchor="middle" >Ar</text>
+<text x="1250.0" y="326" font-size="19" fill="#1f2a3d" font-weight="800" text-anchor="middle" >Argo CD</text>
+<circle cx="1170" cy="356" r="3" fill="#ef7b4d"/>
+<text x="1180" y="361" font-size="13" fill="#55627a" font-weight="normal" text-anchor="start" >Watches Kubernetes/ folder</text>
+<circle cx="1170" cy="378" r="3" fill="#ef7b4d"/>
+<text x="1180" y="383" font-size="13" fill="#55627a" font-weight="normal" text-anchor="start" >Auto-syncs on commit</text>
+<circle cx="1170" cy="400" r="3" fill="#ef7b4d"/>
+<text x="1180" y="405" font-size="13" fill="#55627a" font-weight="normal" text-anchor="start" >Self-heals drift</text>
+<line x1="1353" y1="268" x2="1371" y2="268" stroke="#0b2545" stroke-width="2.5" marker-end="url(#ahn)"/>
+<rect x="1374" y="176" width="200" height="250" rx="12" fill="#fff" stroke="#326ce5" stroke-width="1.5" filter="url(#sh)"/>
+<path d="M1374,188 a12,12 0 0 1 12,-12 h176 a12,12 0 0 1 12,12 v32 h-200 z" fill="#326ce5"/>
+<circle cx="1396" cy="198" r="14" fill="#fff" stroke="#326ce5" stroke-width="3"/>
+<text x="1396" y="204" font-size="17" fill="#326ce5" font-weight="800" text-anchor="middle" >7</text>
+<text x="1418" y="204" font-size="16" fill="#fff" font-weight="700" text-anchor="start" >Runtime</text>
+<circle cx="1474.0" cy="268" r="34" fill="#326ce5" opacity="0.12"/>
+<circle cx="1474.0" cy="268" r="25" fill="#326ce5"/>
+<text x="1474.0" y="275" font-size="19" fill="#fff" font-weight="800" text-anchor="middle" >K8</text>
+<text x="1474.0" y="326" font-size="19" fill="#1f2a3d" font-weight="800" text-anchor="middle" >Amazon EKS</text>
+<circle cx="1394" cy="356" r="3" fill="#326ce5"/>
+<text x="1404" y="361" font-size="13" fill="#55627a" font-weight="normal" text-anchor="start" >EKS Auto Mode nodes</text>
+<circle cx="1394" cy="378" r="3" fill="#326ce5"/>
+<text x="1404" y="383" font-size="13" fill="#55627a" font-weight="normal" text-anchor="start" >2 app pods (amd64)</text>
+<circle cx="1394" cy="400" r="3" fill="#326ce5"/>
+<text x="1404" y="405" font-size="13" fill="#55627a" font-weight="normal" text-anchor="start" >Public NLB on port 80</text>
+<rect x="30" y="462" width="1010" height="150" rx="12" fill="#fff" stroke="#7c3aed" stroke-width="1.5" filter="url(#sh)"/>
+<path d="M30,474 a12,12 0 0 1 12,-12 h986 a12,12 0 0 1 12,12 v26 h-1010 z" fill="#7c3aed"/>
+<text x="50" y="488" font-size="16" fill="#fff" font-weight="700" text-anchor="start" >Monitoring &amp; observability  (separate Monitoring EC2)</text>
+<circle cx="110" cy="554" r="32" fill="#e6522c" opacity="0.12"/>
+<circle cx="110" cy="554" r="23" fill="#e6522c"/>
+<text x="110" y="561" font-size="19" fill="#fff" font-weight="800" text-anchor="middle" >Pr</text>
+<text x="110" y="604" font-size="14" fill="#1f2a3d" font-weight="700" text-anchor="middle" >Prometheus</text>
+<circle cx="230" cy="554" r="32" fill="#f2a11f" opacity="0.12"/>
+<circle cx="230" cy="554" r="23" fill="#f2a11f"/>
+<text x="230" y="561" font-size="19" fill="#fff" font-weight="800" text-anchor="middle" >Gf</text>
+<text x="230" y="604" font-size="14" fill="#1f2a3d" font-weight="700" text-anchor="middle" >Grafana</text>
+<circle cx="320" cy="528" r="3" fill="#7c3aed"/>
+<text x="332" y="533" font-size="14" fill="#55627a" font-weight="normal" text-anchor="start" >Scrapes node_exporter on the Jenkins server and on every EKS node (:9100)</text>
+<circle cx="320" cy="552" r="3" fill="#7c3aed"/>
+<text x="332" y="557" font-size="14" fill="#55627a" font-weight="normal" text-anchor="start" >Scrapes Jenkins itself at :8080/prometheus (builds, queue, executors)</text>
+<circle cx="320" cy="576" r="3" fill="#7c3aed"/>
+<text x="332" y="581" font-size="14" fill="#55627a" font-weight="normal" text-anchor="start" >Grafana dashboards: Node Exporter Full (1860) + Jenkins Overview (9964)</text>
+<circle cx="320" cy="600" r="3" fill="#7c3aed"/>
+<text x="332" y="605" font-size="14" fill="#55627a" font-weight="normal" text-anchor="start" >Every 15 seconds; data kept on the Monitoring server&#x27;s disk</text>
+<rect x="1066" y="462" width="508" height="150" rx="12" fill="#fff" stroke="#15803d" stroke-width="1.5" filter="url(#sh)"/>
+<path d="M1066,474 a12,12 0 0 1 12,-12 h484 a12,12 0 0 1 12,12 v26 h-508 z" fill="#15803d"/>
+<text x="1086" y="488" font-size="16" fill="#fff" font-weight="700" text-anchor="start" >Notifications</text>
+<circle cx="1130" cy="554" r="32" fill="#ea4335" opacity="0.12"/>
+<circle cx="1130" cy="554" r="23" fill="#ea4335"/>
+<text x="1130" y="561" font-size="19" fill="#fff" font-weight="800" text-anchor="middle" >@</text>
+<text x="1182" y="533" font-size="14" fill="#55627a" font-weight="normal" text-anchor="start" >Gmail SMTP (port 465, app password)</text>
+<text x="1182" y="557" font-size="14" fill="#55627a" font-weight="normal" text-anchor="start" >Sent on every build, pass or fail</text>
+<text x="1182" y="581" font-size="14" fill="#55627a" font-weight="normal" text-anchor="start" >Attached: build.log, trivyfs.txt,</text>
+<text x="1182" y="605" font-size="14" fill="#55627a" font-weight="normal" text-anchor="start" >trivyimage.txt</text>
+<rect x="30" y="648" width="30" height="30" rx="6" fill="#0b2545" stroke="none" stroke-width="1.5" />
+<text x="45" y="669" font-size="17" fill="#fff" font-weight="800" text-anchor="middle" >2</text>
+<text x="72" y="669" font-size="20" fill="#0b2545" font-weight="700" text-anchor="start" >Jenkins pipeline, stage by stage</text>
+<rect x="40" y="694" width="270" height="70" rx="35" fill="#fff" stroke="#1d4ed8" stroke-width="2" filter="url(#sh)"/>
+<circle cx="75" cy="729" r="22" fill="#1d4ed8"/>
+<text x="75" y="736" font-size="18" fill="#fff" font-weight="800" text-anchor="middle" >1</text>
+<text x="108" y="725" font-size="16" fill="#1f2a3d" font-weight="700" text-anchor="start" >Clean Workspace</text>
+<text x="108" y="746" font-size="12.5" fill="#55627a" font-weight="normal" text-anchor="start" font-family="Consolas, Menlo, monospace">cleanWs()</text>
+<line x1="313" y1="729" x2="343" y2="729" stroke="#0b2545" stroke-width="2.5" marker-end="url(#ahn)"/>
+<rect x="346" y="694" width="270" height="70" rx="35" fill="#fff" stroke="#1d4ed8" stroke-width="2" filter="url(#sh)"/>
+<circle cx="381" cy="729" r="22" fill="#1d4ed8"/>
+<text x="381" y="736" font-size="18" fill="#fff" font-weight="800" text-anchor="middle" >2</text>
+<text x="414" y="725" font-size="16" fill="#1f2a3d" font-weight="700" text-anchor="start" >Checkout from Git</text>
+<text x="414" y="746" font-size="12.5" fill="#55627a" font-weight="normal" text-anchor="start" font-family="Consolas, Menlo, monospace">git clone your fork</text>
+<line x1="619" y1="729" x2="649" y2="729" stroke="#0b2545" stroke-width="2.5" marker-end="url(#ahn)"/>
+<rect x="652" y="694" width="270" height="70" rx="35" fill="#fff" stroke="#dc2626" stroke-width="2" filter="url(#sh)"/>
+<circle cx="687" cy="729" r="22" fill="#dc2626"/>
+<text x="687" y="736" font-size="18" fill="#fff" font-weight="800" text-anchor="middle" >3</text>
+<text x="720" y="725" font-size="16" fill="#1f2a3d" font-weight="700" text-anchor="start" >SonarQube Analysis</text>
+<text x="720" y="746" font-size="12.5" fill="#55627a" font-weight="normal" text-anchor="start" font-family="Consolas, Menlo, monospace">sonar-scanner -&gt; :9000</text>
+<line x1="925" y1="729" x2="955" y2="729" stroke="#0b2545" stroke-width="2.5" marker-end="url(#ahn)"/>
+<rect x="958" y="694" width="270" height="70" rx="35" fill="#fff" stroke="#dc2626" stroke-width="2" filter="url(#sh)"/>
+<circle cx="993" cy="729" r="22" fill="#dc2626"/>
+<text x="993" y="736" font-size="18" fill="#fff" font-weight="800" text-anchor="middle" >4</text>
+<text x="1026" y="725" font-size="16" fill="#1f2a3d" font-weight="700" text-anchor="start" >Quality Gate</text>
+<text x="1026" y="746" font-size="12.5" fill="#55627a" font-weight="normal" text-anchor="start" font-family="Consolas, Menlo, monospace">waitForQualityGate</text>
+<line x1="1231" y1="729" x2="1261" y2="729" stroke="#0b2545" stroke-width="2.5" marker-end="url(#ahn)"/>
+<rect x="1264" y="694" width="270" height="70" rx="35" fill="#fff" stroke="#1d4ed8" stroke-width="2" filter="url(#sh)"/>
+<circle cx="1299" cy="729" r="22" fill="#1d4ed8"/>
+<text x="1299" y="736" font-size="18" fill="#fff" font-weight="800" text-anchor="middle" >5</text>
+<text x="1332" y="725" font-size="16" fill="#1f2a3d" font-weight="700" text-anchor="start" >Install Dependencies</text>
+<text x="1332" y="746" font-size="12.5" fill="#55627a" font-weight="normal" text-anchor="start" font-family="Consolas, Menlo, monospace">npm install</text>
+<rect x="40" y="806" width="270" height="70" rx="35" fill="#fff" stroke="#dc2626" stroke-width="2" filter="url(#sh)"/>
+<circle cx="75" cy="841" r="22" fill="#dc2626"/>
+<text x="75" y="848" font-size="18" fill="#fff" font-weight="800" text-anchor="middle" >6</text>
+<text x="108" y="837" font-size="16" fill="#1f2a3d" font-weight="700" text-anchor="start" >Trivy FS Scan</text>
+<text x="108" y="858" font-size="12.5" fill="#55627a" font-weight="normal" text-anchor="start" font-family="Consolas, Menlo, monospace">trivy fs . &gt; trivyfs.txt</text>
+<line x1="313" y1="841" x2="343" y2="841" stroke="#0b2545" stroke-width="2.5" marker-end="url(#ahn)"/>
+<rect x="346" y="806" width="270" height="70" rx="35" fill="#fff" stroke="#1d4ed8" stroke-width="2" filter="url(#sh)"/>
+<circle cx="381" cy="841" r="22" fill="#1d4ed8"/>
+<text x="381" y="848" font-size="18" fill="#fff" font-weight="800" text-anchor="middle" >7</text>
+<text x="414" y="837" font-size="16" fill="#1f2a3d" font-weight="700" text-anchor="start" >Docker Build &amp; Push</text>
+<text x="414" y="858" font-size="12.5" fill="#55627a" font-weight="normal" text-anchor="start" font-family="Consolas, Menlo, monospace">docker build / push</text>
+<line x1="619" y1="841" x2="649" y2="841" stroke="#0b2545" stroke-width="2.5" marker-end="url(#ahn)"/>
+<rect x="652" y="806" width="270" height="70" rx="35" fill="#fff" stroke="#dc2626" stroke-width="2" filter="url(#sh)"/>
+<circle cx="687" cy="841" r="22" fill="#dc2626"/>
+<text x="687" y="848" font-size="18" fill="#fff" font-weight="800" text-anchor="middle" >8</text>
+<text x="720" y="837" font-size="16" fill="#1f2a3d" font-weight="700" text-anchor="start" >Trivy Image Scan</text>
+<text x="720" y="858" font-size="12.5" fill="#55627a" font-weight="normal" text-anchor="start" font-family="Consolas, Menlo, monospace">trivy image $IMAGE</text>
+<line x1="925" y1="841" x2="955" y2="841" stroke="#0b2545" stroke-width="2.5" marker-end="url(#ahn)"/>
+<rect x="958" y="806" width="270" height="70" rx="35" fill="#fff" stroke="#15803d" stroke-width="2" filter="url(#sh)"/>
+<circle cx="993" cy="841" r="22" fill="#15803d"/>
+<text x="993" y="848" font-size="18" fill="#fff" font-weight="800" text-anchor="middle" >9</text>
+<text x="1026" y="837" font-size="16" fill="#1f2a3d" font-weight="700" text-anchor="start" >Deploy to Container</text>
+<text x="1026" y="858" font-size="12.5" fill="#55627a" font-weight="normal" text-anchor="start" font-family="Consolas, Menlo, monospace">docker run -p 8081:80</text>
+<line x1="1231" y1="841" x2="1261" y2="841" stroke="#0b2545" stroke-width="2.5" marker-end="url(#ahn)"/>
+<rect x="1264" y="806" width="270" height="70" rx="35" fill="#fff" stroke="#7c3aed" stroke-width="2" filter="url(#sh)"/>
+<circle cx="1299" cy="841" r="22" fill="#7c3aed"/>
+<text x="1299" y="848" font-size="18" fill="#fff" font-weight="800" text-anchor="middle" >10</text>
+<text x="1332" y="837" font-size="16" fill="#1f2a3d" font-weight="700" text-anchor="start" >Email Report</text>
+<text x="1332" y="858" font-size="12.5" fill="#55627a" font-weight="normal" text-anchor="start" font-family="Consolas, Menlo, monospace">post: emailext</text>
+<path d="M1399.0,766 V784 H175.0 V802" fill="none" stroke="#0b2545" stroke-width="2.2" marker-end="url(#ahn)"/>
+<circle cx="48" cy="903" r="7" fill="#1d4ed8"/>
+<text x="62" y="908" font-size="14" fill="#55627a" font-weight="normal" text-anchor="start" >Build step</text>
+<circle cx="258" cy="903" r="7" fill="#dc2626"/>
+<text x="272" y="908" font-size="14" fill="#55627a" font-weight="normal" text-anchor="start" >Security / quality check</text>
+<circle cx="468" cy="903" r="7" fill="#15803d"/>
+<text x="482" y="908" font-size="14" fill="#55627a" font-weight="normal" text-anchor="start" >Deploy</text>
+<circle cx="678" cy="903" r="7" fill="#7c3aed"/>
+<text x="692" y="908" font-size="14" fill="#55627a" font-weight="normal" text-anchor="start" >Notify</text>
+<rect x="30" y="934" width="30" height="30" rx="6" fill="#0b2545" stroke="none" stroke-width="1.5" />
+<text x="45" y="955" font-size="17" fill="#fff" font-weight="800" text-anchor="middle" >3</text>
+<text x="72" y="955" font-size="20" fill="#0b2545" font-weight="700" text-anchor="start" >GitOps delivery to Kubernetes</text>
+<rect x="40" y="980" width="230" height="64" rx="10" fill="#fff" stroke="#24292f" stroke-width="2" filter="url(#sh)"/>
+<rect x="40" y="980" width="8" height="64" rx="4" fill="#24292f"/>
+<text x="62" y="1006" font-size="16" fill="#1f2a3d" font-weight="700" text-anchor="start" >Commit</text>
+<text x="62" y="1028" font-size="13" fill="#55627a" font-weight="normal" text-anchor="start" >edit Kubernetes/*.yml</text>
+<line x1="273" y1="1012" x2="297" y2="1012" stroke="#0b2545" stroke-width="2.5" marker-end="url(#ahn)"/>
+<rect x="300" y="980" width="230" height="64" rx="10" fill="#fff" stroke="#ef7b4d" stroke-width="2" filter="url(#sh)"/>
+<rect x="300" y="980" width="8" height="64" rx="4" fill="#ef7b4d"/>
+<text x="322" y="1006" font-size="16" fill="#1f2a3d" font-weight="700" text-anchor="start" >Argo CD</text>
+<text x="322" y="1028" font-size="13" fill="#55627a" font-weight="normal" text-anchor="start" >detects change (~3 min)</text>
+<line x1="533" y1="1012" x2="557" y2="1012" stroke="#0b2545" stroke-width="2.5" marker-end="url(#ahn)"/>
+<rect x="560" y="980" width="230" height="64" rx="10" fill="#fff" stroke="#ef7b4d" stroke-width="2" filter="url(#sh)"/>
+<rect x="560" y="980" width="8" height="64" rx="4" fill="#ef7b4d"/>
+<text x="582" y="1006" font-size="16" fill="#1f2a3d" font-weight="700" text-anchor="start" >Sync</text>
+<text x="582" y="1028" font-size="13" fill="#55627a" font-weight="normal" text-anchor="start" >applies Deployment + Service</text>
+<line x1="793" y1="1012" x2="817" y2="1012" stroke="#0b2545" stroke-width="2.5" marker-end="url(#ahn)"/>
+<rect x="820" y="980" width="230" height="64" rx="10" fill="#fff" stroke="#326ce5" stroke-width="2" filter="url(#sh)"/>
+<rect x="820" y="980" width="8" height="64" rx="4" fill="#326ce5"/>
+<text x="842" y="1006" font-size="16" fill="#1f2a3d" font-weight="700" text-anchor="start" >EKS nodes</text>
+<text x="842" y="1028" font-size="13" fill="#55627a" font-weight="normal" text-anchor="start" >pull image from Docker Hub</text>
+<line x1="1053" y1="1012" x2="1077" y2="1012" stroke="#0b2545" stroke-width="2.5" marker-end="url(#ahn)"/>
+<rect x="1080" y="980" width="230" height="64" rx="10" fill="#fff" stroke="#326ce5" stroke-width="2" filter="url(#sh)"/>
+<rect x="1080" y="980" width="8" height="64" rx="4" fill="#326ce5"/>
+<text x="1102" y="1006" font-size="16" fill="#1f2a3d" font-weight="700" text-anchor="start" >Rolling update</text>
+<text x="1102" y="1028" font-size="13" fill="#55627a" font-weight="normal" text-anchor="start" >new pods ready, old removed</text>
+<line x1="1313" y1="1012" x2="1337" y2="1012" stroke="#0b2545" stroke-width="2.5" marker-end="url(#ahn)"/>
+<rect x="1340" y="980" width="230" height="64" rx="10" fill="#fff" stroke="#15803d" stroke-width="2" filter="url(#sh)"/>
+<rect x="1340" y="980" width="8" height="64" rx="4" fill="#15803d"/>
+<text x="1362" y="1006" font-size="16" fill="#1f2a3d" font-weight="700" text-anchor="start" >Users</text>
+<text x="1362" y="1028" font-size="13" fill="#55627a" font-weight="normal" text-anchor="start" >open the NLB URL on :80</text>
+<rect x="0" y="1070" width="1600" height="40" rx="0" fill="#0b2545" stroke="none" stroke-width="1.5" />
+<text x="800.0" y="1095" font-size="15" fill="#dbe7f5" font-weight="600" text-anchor="middle" >Shift-left security  |  Automated build and deploy  |  GitOps  |  Observability  |  Email alerts</text>
+</svg>

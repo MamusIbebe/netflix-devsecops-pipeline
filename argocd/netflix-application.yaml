@@ -1,0 +1,20 @@
+# Optional: create the ArgoCD app from the command line instead of the UI.
+#   kubectl apply -f argocd/netflix-application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: netflix
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/<your-github-username>/DevSecOps-Project.git   # CHANGE ME
+    targetRevision: main
+    path: Kubernetes
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
