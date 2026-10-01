@@ -1,3 +1,4 @@
+> 📌 My full write-up, diagrams and screenshots for this project: https://github.com/Mamuslbebe/netflix-devsecops-pipeline
 # Netflix Clone: DevSecOps CI/CD Pipeline on AWS
 
 A full DevSecOps project. A Netflix-style React app is built, code-scanned, vulnerability-scanned, packaged, deployed to Docker and to **Amazon EKS** through **GitOps**, and then monitored, with email reports for every build.
